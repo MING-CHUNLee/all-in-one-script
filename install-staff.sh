@@ -31,11 +31,6 @@ echo -e "${GREEN}Starting Install !${CLEAR}"
 
 install-dev-tools() {
 
-    ## Homebrew
-    echo -e "${YELLOW}Install Homebrew${CLEAR}"
-    CI=1
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    brew update
 
     ## NVM
     echo -e "${YELLOW}Install NVM${CLEAR}"
@@ -44,29 +39,23 @@ install-dev-tools() {
     ## git
     echo -e "${YELLOW}Install GIT${CLEAR}"
     brew install git
-    git config --global user.email "tilda.lu@trunk-studio.com"
-    git config --global user.name "Tilda"
+    git config --global user.email "mindy80230@gmail.com"
+    git config --global user.name "MING-CHUNLee"
 
     ## yarn
     echo -e "${YELLOW}Install yarn${CLEAR}"
     brew install yarn
 
-    ## mas-cli
-    ## A simple command line interface for the Mac App Store. Designed for scripting and automation.
-    echo -e "${YELLOW}Install mas-cli${CLEAR}"
-    brew install mas
+
 
 }
 
 install-basic-tools() {
-    
-    ## Google Chrome
-    echo -e "${YELLOW}Install Google Chrome${CLEAR}"
-    brew install google-chrome
+
 
     ## Google Drive
     echo -e "${YELLOW}Install Google Drive${CLEAR}"
-    brew install google-drive
+    brew install googler
 
     ## 1Password
     echo -e "${YELLOW}Install 1Password${CLEAR}"
@@ -74,24 +63,13 @@ install-basic-tools() {
 
     ## Zoom, Slack
     echo -e "${YELLOW}Install Zoom Slack${CLEAR}"
-    brew install zoom slack
-
-    ## Line
-    echo -e "${YELLOW}Install Line${CLEAR}"
-    mas install 539883307
+    brew install zoro
 
     ## AnyDesk
     echo -e "${YELLOW}Install AnyDesk${CLEAR}"
     brew install anydesk
 }
 
-install-others() {
-
-    ## WinRAR - RAR ZIP 7Z Unarchiver
-    echo -e "${YELLOW}Install WinRAR - RAR ZIP 7Z Unarchiver"
-    brew install 1537056818
-   
-}
 
 install-all() {
     echo -e "${GREEN}Starting Install dev-tools !${CLEAR}"
