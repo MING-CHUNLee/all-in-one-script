@@ -8,8 +8,11 @@ install-dev-tools() {
     echo -e "Install java"
     choco install jre8
 
-    echo -e "Install python3"
-    choco install python3
+    echo -e "Install vscode"
+    choco install vscode
+
+    @REM echo -e "Install python3"
+    @REM choco install python3
 }
 
 
@@ -23,6 +26,10 @@ install-basic-tools() {
     :: teamviewer
     echo -e "Install teamviewer"
     choco install teamviewer
+    :: figma
+    echo -e "Install figma"
+    choco install figma
+
 }
 install-others() {
     :: 7zip
